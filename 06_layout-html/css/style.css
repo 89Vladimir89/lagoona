@@ -1,0 +1,272 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
+  font-size: 0;
+}
+
+/* glob */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  padding: 30px 15px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.section-title {
+  margin: 0;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.section-offset:not(:last-child) {
+  margin-bottom: 70px;
+  outline: 1px solid red;
+}
+
+.container-head {
+  padding-bottom: 0;
+}
+
+.container-main {
+  padding-top: 0;
+}
+
+/* header */
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.header-up {
+  margin: 0;
+  margin-bottom: 30px;
+  height: 54px;
+}
+
+.header-down {
+  padding: 0 45px;
+  min-height: 70px;
+}
+
+.header-phone {
+  margin-right: auto;
+}
+
+.flex-container-up {
+  align-items: center;
+}
+
+.header-list {
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-nav {
+  margin-right: 114px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-btn-dwn {
+  align-items: center;
+}
+
+.link-btn {
+  padding: 13px 20px;
+}
+
+/* main */
+
+.main {
+  padding-top: 70px;
+}
+
+/* offeers */
+
+.offeers-most {
+  margin: 0;
+}
+
+.offers-item {
+  margin-right: 24px;
+  padding: 40px 45px;
+  width: 573px;
+  min-height: 258px;
+  outline: 1px solid red;
+}
+
+.offers-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.offers-item-div {
+  padding: 212px 229px 40px 45px;
+  width: 573px;
+  min-height: 540px;
+  outline: 1px solid red;
+}
+
+.offers-div-general {
+  justify-content: flex-start;
+}
+
+.offeers-most-style {
+  margin-bottom: 15px;
+}
+
+.offeers-most {
+  margin-bottom: 15px;
+}
+
+.price-offers {
+  margin-bottom: 47px;
+}
+
+/* about */
+
+.about-us {
+  padding-bottom: 5px;
+}
+
+.about-text {
+  margin-left: 5px;
+  max-width: 75%;
+  max-height: 200px;
+  overflow: auto;
+}
+
+/* services */
+
+
+.services-items {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item {
+  padding: 191px 126px 35px 45px;
+  width: 573px;
+  min-height: 330px;
+  outline: 1px solid red;
+}
+
+.services-h3 {
+  margin-bottom: 15px;
+}
+
+.exclusive,
+.saunas {
+  margin-bottom: 24px;
+
+}
+
+/* benefits */
+
+.benefits-items {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefits-item {
+  width: 276px;
+  min-height: 276px;
+  padding: 116px 42px 32px 45px;
+  outline: 1px solid red;
+}
+
+.benefits-up {
+  margin-bottom: 22px;
+}
+
+/* accommodation */
+
+.acomm-items {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.acomm-item {
+  width: 374px;
+  outline: 1px solid red;
+}
+
+.gereral-price {
+  padding: 32px 45px 45px 45px;
+}
+
+.price-star {
+  align-items: center;
+  justify-content: center;
+}
+
+.acomm-price {
+  margin-right: auto;
+}
+
+.name-home {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.acomm-location {
+  margin-bottom: 20px;
+}
+
+.acom-btn {
+  padding: 13px 20px;
+}
+
+.up-middle {
+  margin-bottom: 24px;
+}
+
+.acom-div {
+  justify-content: center;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding: 373px 54px 27px 54px;
+}
