@@ -23,24 +23,70 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: MullerLight;
+  src: local("Muller-Light"),
+  url("../fonts/MullerLight.woff2") format("woff2"),
+  url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MullerRegular;
+  src: local("Muller-Regular"),
+  url("../fonts/MullerRegular.woff2") format("woff2"),
+  url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MullerMedium;
+  src: local("Muller-Medium"),
+  url("../fonts/MullerMedium.woff2") format("woff2"),
+  url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MullerBold;
+  src: local("Muller-Bold"),
+  url("../fonts/MullerBold.woff2") format("woff2"),
+  url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  font-family: 'Muller', sans-serif;
   font-size: 0;
+  background-color: #f1f1f1;
 }
 
 /* glob */
+
 .list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .btn-reset {
   padding: 0;
+  min-width: 177px;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
 }
 
 .flex {
@@ -58,11 +104,14 @@ body {
   margin: 0;
   padding-left: 40px;
   padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
 }
 
 .section-offset:not(:last-child) {
   margin-bottom: 70px;
-  outline: 1px solid red;
 }
 
 .container-head {
@@ -88,14 +137,27 @@ body {
 .header-down {
   padding: 0 45px;
   min-height: 70px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .header-phone {
   margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #666666;
 }
 
 .flex-container-up {
   align-items: center;
+}
+
+.header-link-privat {
+  padding-left: 29px;
+  background-image: url("../img/vector.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
 }
 
 .header-list {
@@ -105,6 +167,10 @@ body {
 
 .header-nav {
   margin-right: 114px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
 }
 
 .header-list-item:not(:last-child) {
@@ -117,6 +183,17 @@ body {
 
 .link-btn {
   padding: 13px 20px;
+  min-width: 107px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.link-travel {
+  margin-right: 40px;
+}
+
+.yellow-link {
+  color: #CC9933;
 }
 
 /* main */
@@ -129,6 +206,11 @@ body {
 
 .offeers-most {
   margin: 0;
+  max-width: 300px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
 }
 
 .offers-item {
@@ -136,7 +218,7 @@ body {
   padding: 40px 45px;
   width: 573px;
   min-height: 258px;
-  outline: 1px solid red;
+  border-radius: 10px;
 }
 
 .offers-item:not(:last-child) {
@@ -147,15 +229,46 @@ body {
   padding: 212px 229px 40px 45px;
   width: 573px;
   min-height: 540px;
-  outline: 1px solid red;
+  border-radius: 10px;
+  background-image: url("/img/off-3.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .offers-div-general {
   justify-content: flex-start;
 }
 
+.offers-div-ul {
+  border-radius: 10px;
+}
+
+.offers-pic-up {
+  background-image: url("/img/off-1.jpg");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.offers-pic-down {
+  background-image: url("../img/off-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .offeers-most-style {
   margin-bottom: 15px;
+  max-width: 420px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
 }
 
 .offeers-most {
@@ -164,6 +277,18 @@ body {
 
 .price-offers {
   margin-bottom: 47px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.offers-link {
+  padding-right: 17px;
+  background-image: url("../img/vector-2.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 /* about */
@@ -176,10 +301,18 @@ body {
   margin-left: 5px;
   max-width: 75%;
   max-height: 200px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
   overflow: auto;
 }
 
 /* services */
+
+.services {
+  margin-bottom: 46px;
+}
 
 
 .services-items {
@@ -188,20 +321,62 @@ body {
 }
 
 .services-item {
+  margin-bottom: 24px;
   padding: 191px 126px 35px 45px;
   width: 573px;
   min-height: 330px;
-  outline: 1px solid red;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.exclusive {
+  background-image: url("/img/serv-1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.rent {
+  background-image: url("/img/serv-3.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.saunas {
+  background-image: url("/img/serv-2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.protected {
+  background-image: url("/img/serv-4.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .services-h3 {
   margin-bottom: 15px;
 }
 
-.exclusive,
-.saunas {
-  margin-bottom: 24px;
+.services-link {
+  padding-right: 17px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  background-image: url("/img/vector-2.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
 
+.services-text {
+  max-width: 402px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 /* benefits */
@@ -212,14 +387,91 @@ body {
 }
 
 .benefits-item {
+  margin-bottom: 22px;
   width: 276px;
   min-height: 276px;
-  padding: 116px 42px 32px 45px;
-  outline: 1px solid red;
+  padding: 40px 42px 32px 45px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-.benefits-up {
-  margin-bottom: 22px;
+.benefits-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.benefits-one {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-1.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-two {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-2.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-three {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-3.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-four {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-4.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-five {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-5.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-six {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-6.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-seven {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-7.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.benefits-eight {
+  margin-bottom: 10px;
+  min-width: 64px;
+  min-height: 66px;
+  background-image: url("/img/bene-8.svg");
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 /* accommodation */
@@ -230,17 +482,50 @@ body {
 }
 
 .acomm-item {
+  margin-bottom: 24px;
   width: 374px;
-  outline: 1px solid red;
+  border-radius: 10px;
+  font-size: 0;
+  background-color: #fff;
+
+}
+
+.acomm-item-one {
+  background-image: url("/img/acom-9.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.from {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.night {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 }
 
 .gereral-price {
-  padding: 32px 45px 45px 45px;
+  padding: 249px 45px 45px 45px;
+
 }
 
 .price-star {
   align-items: center;
   justify-content: center;
+  /* padding-top: 249px; */
 }
 
 .acomm-price {
@@ -250,18 +535,71 @@ body {
 .name-home {
   margin-top: 16px;
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
 }
 
 .acomm-location {
   margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
 }
 
 .acom-btn {
   padding: 13px 20px;
+  font-size: 16px;
 }
 
-.up-middle {
-  margin-bottom: 24px;
+.one-middle {
+  background-image: url("/img/acom-1.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.two-middle {
+  background-image: url("/img/acom-2.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.three-middle {
+  background-image: url("/img/acom-3.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.four-middle {
+  background-image: url("/img/acom-4.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.five-middle {
+  background-image: url("/img/acom-5.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.six-middle {
+  background-image: url("/img/acom-6.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.seven-middle {
+  background-image: url("/img/acom-7.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.eight-middle {
+  background-image: url("/img/acom-8.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 .acom-div {
@@ -269,4 +607,16 @@ body {
   align-content: flex-end;
   flex-wrap: wrap;
   padding: 373px 54px 27px 54px;
+  width: 374px;
+}
+
+.acom-link {
+  padding-right: 17px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+  background-image: url("/img/vector3.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 }
