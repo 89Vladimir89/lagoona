@@ -202,14 +202,12 @@ body {
 
 .offeers-most {
   align-items: stretch;
-
   margin: 0;
   max-width: 300px;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
   color: #FFFFFF;
-
 }
 
 .offers-item {
@@ -225,7 +223,6 @@ body {
 
 .offers-item-div {
   align-items: stretch;
-
   padding: 212px 229px 40px 45px;
   width: 573px;
   min-height: 540px;
@@ -238,13 +235,12 @@ body {
 }
 
 .offers-div-general {
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .stretch-div {
   align-items: stretch;
-
-
 }
 
 .offers-pic-up {
@@ -315,7 +311,6 @@ body {
 .services-items {
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
 }
 
 .services-item {
