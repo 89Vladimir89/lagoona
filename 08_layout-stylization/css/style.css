@@ -13,11 +13,6 @@ a {
   text-decoration: none;
 }
 
-h2,
-h3,
-p {
-  margin: 0;
-}
 
 img {
   max-width: 100%;
@@ -26,8 +21,8 @@ img {
 @font-face {
   font-family: MullerLight;
   src: local("Muller-Light"),
-  url("../fonts/MullerLight.woff2") format("woff2"),
-  url("../fonts/MullerLight.woff") format("woff");
+    url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -36,8 +31,8 @@ img {
 @font-face {
   font-family: MullerRegular;
   src: local("Muller-Regular"),
-  url("../fonts/MullerRegular.woff2") format("woff2"),
-  url("../fonts/MullerRegular.woff") format("woff");
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -46,8 +41,8 @@ img {
 @font-face {
   font-family: MullerMedium;
   src: local("Muller-Medium"),
-  url("../fonts/MullerMedium.woff2") format("woff2"),
-  url("../fonts/MullerMedium.woff") format("woff");
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -56,15 +51,15 @@ img {
 @font-face {
   font-family: MullerBold;
   src: local("Muller-Bold"),
-  url("../fonts/MullerBold.woff2") format("woff2"),
-  url("../fonts/MullerBold.woff") format("woff");
+    url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1170px;
   font-family: 'Muller', sans-serif;
   font-size: 0;
   background-color: #f1f1f1;
@@ -93,9 +88,9 @@ body {
   display: flex;
 }
 
+
 .container {
-  width: 1200px;
-  padding: 30px 15px;
+  width: 1170px;
   margin: 0 auto;
   font-size: 16px;
 }
@@ -103,7 +98,7 @@ body {
 .section-title {
   margin: 0;
   padding-left: 40px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -115,6 +110,7 @@ body {
 }
 
 .container-head {
+  padding-top: 30px;
   padding-bottom: 0;
 }
 
@@ -205,16 +201,18 @@ body {
 /* offeers */
 
 .offeers-most {
+  align-items: stretch;
+
   margin: 0;
   max-width: 300px;
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
   color: #FFFFFF;
+
 }
 
 .offers-item {
-  margin-right: 24px;
   padding: 40px 45px;
   width: 573px;
   min-height: 258px;
@@ -226,11 +224,13 @@ body {
 }
 
 .offers-item-div {
+  align-items: stretch;
+
   padding: 212px 229px 40px 45px;
   width: 573px;
   min-height: 540px;
   border-radius: 10px;
-  background-image: url("/img/off-3.jpg");
+  background-image: url("../img/off-3.jpg");
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -238,16 +238,17 @@ body {
 }
 
 .offers-div-general {
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
-.offers-div-ul {
-  border-radius: 10px;
+.stretch-div {
+  align-items: stretch;
+
+
 }
 
 .offers-pic-up {
-  background-image: url("/img/off-1.jpg");
-  overflow: hidden;
+  background-image: url("../img/off-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -261,8 +262,8 @@ body {
   background-repeat: no-repeat;
 }
 
-
 .offeers-most-style {
+  margin: 0;
   margin-bottom: 15px;
   max-width: 420px;
   font-weight: 700;
@@ -276,6 +277,7 @@ body {
 }
 
 .price-offers {
+  margin: 0;
   margin-bottom: 47px;
   font-weight: 400;
   font-size: 20px;
@@ -293,12 +295,8 @@ body {
 
 /* about */
 
-.about-us {
-  padding-bottom: 5px;
-}
-
 .about-text {
-  margin-left: 5px;
+  margin: 0;
   max-width: 75%;
   max-height: 200px;
   font-weight: 400;
@@ -314,14 +312,13 @@ body {
   margin-bottom: 46px;
 }
 
-
 .services-items {
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
 }
 
 .services-item {
-  margin-bottom: 24px;
   padding: 191px 126px 35px 45px;
   width: 573px;
   min-height: 330px;
@@ -330,48 +327,51 @@ body {
 }
 
 .exclusive {
-  background-image: url("/img/serv-1.jpg");
+  background-image: url("../img/serv-1.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .rent {
-  background-image: url("/img/serv-3.jpg");
+  background-image: url("../img/serv-3.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .saunas {
-  background-image: url("/img/serv-2.jpg");
+  background-image: url("../img/serv-2.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .protected {
-  background-image: url("/img/serv-4.jpg");
+  background-image: url("../img/serv-4.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .services-h3 {
+  margin: 0;
   margin-bottom: 15px;
 }
 
 .services-link {
+  margin: 0;
   padding-right: 17px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  background-image: url("/img/vector-2.svg");
+  background-image: url("../img/vector-2.svg");
   background-repeat: no-repeat;
   background-position: center right;
 }
 
 .services-text {
+  margin: 0;
   max-width: 402px;
   font-weight: 400;
   font-size: 16px;
@@ -387,7 +387,6 @@ body {
 }
 
 .benefits-item {
-  margin-bottom: 22px;
   width: 276px;
   min-height: 276px;
   padding: 40px 42px 32px 45px;
@@ -395,7 +394,12 @@ body {
   border-radius: 10px;
 }
 
+.benefits-up {
+  margin-bottom: 22px;
+}
+
 .benefits-text {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -406,7 +410,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-1.svg");
+  background-image: url("../img/bene-1.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -415,7 +419,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-2.svg");
+  background-image: url("../img/bene-2.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -424,7 +428,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-3.svg");
+  background-image: url("../img/bene-3.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -433,7 +437,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-4.svg");
+  background-image: url("../img/bene-4.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -442,7 +446,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-5.svg");
+  background-image: url("../img/bene-5.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -451,7 +455,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-6.svg");
+  background-image: url("../img/bene-6.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -460,7 +464,7 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-7.svg");
+  background-image: url("../img/bene-7.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -469,31 +473,27 @@ body {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("/img/bene-8.svg");
+  background-image: url("../img/bene-8.svg");
   background-repeat: no-repeat;
   background-position: left top;
 }
 
 /* accommodation */
 
-.acomm-items {
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .acomm-item {
-  margin-bottom: 24px;
   width: 374px;
   border-radius: 10px;
   font-size: 0;
   background-color: #fff;
-
 }
 
-.acomm-item-one {
-  background-image: url("/img/acom-9.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
+.bottom-class {
+  margin-bottom: 24px;
+}
+
+.acomm-items {
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .from {
@@ -518,22 +518,30 @@ body {
 }
 
 .gereral-price {
-  padding: 249px 45px 45px 45px;
+  padding: 0;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  padding-left: 45px;
 
+}
+
+.acom-img {
+  margin-bottom: 32px;
 }
 
 .price-star {
+  margin-bottom: 16px;
   align-items: center;
   justify-content: center;
-  /* padding-top: 249px; */
 }
 
 .acomm-price {
+  margin: 0;
   margin-right: auto;
 }
 
 .name-home {
-  margin-top: 16px;
+  margin: 0;
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
@@ -542,6 +550,7 @@ body {
 }
 
 .acomm-location {
+  margin: 0;
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
@@ -554,60 +563,16 @@ body {
   font-size: 16px;
 }
 
-.one-middle {
-  background-image: url("/img/acom-1.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
 
-.two-middle {
-  background-image: url("/img/acom-2.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.three-middle {
-  background-image: url("/img/acom-3.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.four-middle {
-  background-image: url("/img/acom-4.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.five-middle {
-  background-image: url("/img/acom-5.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.six-middle {
-  background-image: url("/img/acom-6.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.seven-middle {
-  background-image: url("/img/acom-7.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.eight-middle {
-  background-image: url("/img/acom-8.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-.acom-div {
+.acomm-item-one {
   justify-content: center;
   align-content: flex-end;
   flex-wrap: wrap;
   padding: 373px 54px 27px 54px;
   width: 374px;
+  background-image: url("../img/acom-9.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .acom-link {
@@ -616,7 +581,7 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #FFFFFF;
-  background-image: url("/img/vector3.svg");
+  background-image: url("../img/vector3.svg");
   background-repeat: no-repeat;
   background-position: center right;
 }
