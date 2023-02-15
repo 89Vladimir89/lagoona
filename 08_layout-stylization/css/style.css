@@ -67,9 +67,16 @@ body {
 
 /* glob */
 
+.offers-items {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .list-reset {
   margin: 0;
   padding: 0;
+  height: 100%;
   list-style: none;
 
 }
@@ -134,7 +141,7 @@ body {
   padding: 0 45px;
   min-height: 70px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .header-phone {
@@ -211,10 +218,14 @@ body {
 }
 
 .offers-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 50%;
   padding: 40px 45px;
   width: 573px;
   min-height: 258px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .offers-item:not(:last-child) {
@@ -222,11 +233,14 @@ body {
 }
 
 .offers-item-div {
-  align-items: stretch;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 212px 229px 40px 45px;
   width: 573px;
   min-height: 540px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-image: url("../img/off-3.jpg");
   overflow: hidden;
   background-size: cover;
@@ -237,10 +251,6 @@ body {
 .offers-div-general {
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.stretch-div {
-  align-items: stretch;
 }
 
 .offers-pic-up {
@@ -317,36 +327,27 @@ body {
   padding: 191px 126px 35px 45px;
   width: 573px;
   min-height: 330px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #fff;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .exclusive {
   background-image: url("../img/serv-1.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .rent {
   background-image: url("../img/serv-3.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .saunas {
   background-image: url("../img/serv-2.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .protected {
   background-image: url("../img/serv-4.jpg");
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .services-h3 {
@@ -386,7 +387,7 @@ body {
   min-height: 276px;
   padding: 40px 42px 32px 45px;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .benefits-up {
@@ -400,84 +401,52 @@ body {
   line-height: 200%;
   color: #000000;
 }
-
-.benefits-one {
+.benefits-list {
   margin-bottom: 10px;
   min-width: 64px;
   min-height: 66px;
-  background-image: url("../img/bene-1.svg");
   background-repeat: no-repeat;
   background-position: left top;
+
+}
+
+.benefits-one {
+  background-image: url("../img/bene-1.svg");
 }
 
 .benefits-two {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-2.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .benefits-three {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-3.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .benefits-four {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-4.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .benefits-five {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-5.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .benefits-six {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-6.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .benefits-seven {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-7.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 .benefits-eight {
-  margin-bottom: 10px;
-  min-width: 64px;
-  min-height: 66px;
   background-image: url("../img/bene-8.svg");
-  background-repeat: no-repeat;
-  background-position: left top;
 }
 
 /* accommodation */
 
 .acomm-item {
   width: 374px;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 0;
   background-color: #fff;
 }
