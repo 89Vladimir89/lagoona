@@ -19,7 +19,7 @@ img {
 }
 
 @font-face {
-  font-family: MullerLight;
+  font-family: "Muller";
   src: local("Muller-Light"),
     url("../fonts/MullerLight.woff2") format("woff2"),
     url("../fonts/MullerLight.woff") format("woff");
@@ -29,7 +29,7 @@ img {
 }
 
 @font-face {
-  font-family: MullerRegular;
+  font-family: "Muller";
   src: local("Muller-Regular"),
     url("../fonts/MullerRegular.woff2") format("woff2"),
     url("../fonts/MullerRegular.woff") format("woff");
@@ -39,7 +39,7 @@ img {
 }
 
 @font-face {
-  font-family: MullerMedium;
+  font-family: "Muller";
   src: local("Muller-Medium"),
     url("../fonts/MullerMedium.woff2") format("woff2"),
     url("../fonts/MullerMedium.woff") format("woff");
@@ -49,7 +49,7 @@ img {
 }
 
 @font-face {
-  font-family: MullerBold;
+  font-family: "Muller";
   src: local("Muller-Bold"),
     url("../fonts/MullerBold.woff2") format("woff2"),
     url("../fonts/MullerBold.woff") format("woff");
@@ -70,7 +70,6 @@ body {
 .offers-items {
   display: flex;
   flex-direction: column;
-
 }
 
 .list-reset {
@@ -78,23 +77,20 @@ body {
   padding: 0;
   height: 100%;
   list-style: none;
-
 }
 
 .btn-reset {
   padding: 0;
-  min-width: 177px;
   border: none;
-  background-color: transparent;
-  cursor: pointer;
   border: 1px solid #CC9933;
   border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .flex {
   display: flex;
 }
-
 
 .container {
   width: 1170px;
@@ -185,8 +181,7 @@ body {
 }
 
 .link-btn {
-  padding: 13px 20px;
-  min-width: 107px;
+  padding: 12px 19px;
   border: 1px solid #CC9933;
   border-radius: 10px;
 }
@@ -221,6 +216,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: flex-start;
   flex-basis: 50%;
   padding: 40px 45px;
   width: 573px;
@@ -258,7 +254,6 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .offers-pic-down {
@@ -401,6 +396,7 @@ body {
   line-height: 200%;
   color: #000000;
 }
+
 .benefits-list {
   margin-bottom: 10px;
   min-width: 64px;
@@ -449,6 +445,7 @@ body {
   border-radius: 15px;
   font-size: 0;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .bottom-class {
@@ -523,8 +520,9 @@ body {
 }
 
 .acom-btn {
-  padding: 13px 20px;
+  padding: 12px 19px;
   font-size: 16px;
+  line-height: 16px;
 }
 
 
@@ -537,10 +535,11 @@ body {
   background-image: url("../img/acom-9.jpg");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .acom-link {
-  padding-right: 17px;
+  padding-right: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
